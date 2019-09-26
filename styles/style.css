@@ -1,0 +1,33 @@
+* {
+    margin:0;
+    padding: 0;
+}
+html {
+    font-family: 'Dosis', sans-serif;
+
+    font-size: 20px
+}
+.img-thumbnail {
+    height: 200px;
+    width: 200px;
+}
+
+.container-size {
+    display: grid;
+
+}
+
+.form-container {
+    border: 3px solid black;
+    padding: 10px;
+    display:grid;
+    position:sticky;
+    
+
+}
+
+.submit-button {
+    border-radius: 10%;
+    color: #785b0b;
+    background-color:
+}
