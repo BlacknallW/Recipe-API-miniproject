@@ -12,22 +12,37 @@ html {
     width: 200px;
 }
 
-.container-size {
+#contentContainer {
     display: grid;
+    grid-template-columns:40px px auto 50px;
+    grid-template-rows: 25% 15px auto;
+    border: 1px solid black;
 
 }
 
 .form-container {
-    border: 3px solid black;
-    padding: 10px;
+    border: 3px solid #838c7e;
     display:grid;
     position:sticky;
-    
-
+    grid-template-columns:40px 5 auto 50px;
+    grid-template-rows: 25% 15px auto;
+    position: sticky;
+    top: 0;
+    background-color: #458f1f
 }
 
+#recipe-container{
+    grid-column-start:
+}
 .submit-button {
     border-radius: 10%;
     color: #785b0b;
-    background-color:
+}
+
+.form-group {
+    grid-column-start:2;
+}
+
+.link {
+    text-decoration: none;
 }
