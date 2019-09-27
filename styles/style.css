@@ -4,8 +4,11 @@
 }
 html {
     font-family: 'Dosis', sans-serif;
-
-    font-size: 20px
+    font-size: 20px;
+    background-image: url("../images/Background\ Wood\ Cooking\ -\ 6144x4069.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .img-thumbnail {
     height: 200px;
@@ -21,12 +24,11 @@ html {
 .form-container {
     border: 3px solid #838c7e;
     display:grid;
-    position:sticky;
     grid-template-columns:40px 5 auto 50px;
     grid-template-rows: 25% 15px auto;
     position: sticky;
     top: 0;
-    background-color: #458f1f
+    background-color: rgba(250, 237, 212, 0.5)
 }
 
 
@@ -37,6 +39,8 @@ html {
 
 .form-group {
     grid-column-start:2;
+    letter-spacing: 1.5px;
+    margin-top: 10px
 }
 
 .link {
@@ -46,13 +50,25 @@ html {
 .iframePage {
     height: 500px;
     width: 100%;
-    border: 1px solid black
+    border: 1px solid black;
+    border-radius: 5%;
 }
 
 .line {
-    border: 1px solid black
+    border: .5px dotted black;
 }
 
 .recipe-container {
-    
+    display: grid;
+    width: 75%;
+    justify-self: center;
+
+}
+.recipe-container > * {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    background-color: rgba(250, 237, 212, 0.3);
 }
