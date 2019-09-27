@@ -3,7 +3,7 @@ $(document).ready(function() {
     let foodSelector = $("#foodSelector");
     const recipeContainer = $("#recipeContainer");
     const iframePage = $("#iframePage")
-    const link = $("#link")
+    const link = $("href")
 
     formContainer.submit('submit', onSubmit);
 
@@ -30,8 +30,7 @@ $(document).ready(function() {
 
         recipeContainer.append(`<p>Dish Name: ${dishName}</p>`)
         recipeContainer.append(`<p>What You'll Need: ${dishIngredients}</p>`)
-        recipeContainer.append(`<a href=${dishLink} class="link" id="link">Link to Recipe</a></br>`)
-        recipeContainer.append(`<img src="${dishImage}" class="img-border"></br>`)
+        recipeContainer.append(`<a href=${dishLink} class="link" id="link" target="_blank">Link to Recipe</a></br>`)
         recipeContainer.append(`<p class="line"></p></br>`)
         iframePage.attr("src",`${dishLink}`)
     });
