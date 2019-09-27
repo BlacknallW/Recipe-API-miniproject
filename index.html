@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ReciPicker</title>
-    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-    <link href="./styles/style.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-    <form id="formContainer" class="form-container">
-        <div class="form-group">
-            <label>Input the name of a dish(soup,salad,sandwich,etc).</label></br>
-            <input type="text" name="recipe" id="foodSelector" class="form-control">
-            <input type="submit" id="submitButton" value="Find your recipe!" class="submit-button">
-        </div>
-    </form>
-        <div id="contentContainer" class="container-size"></div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"crossorigin="anonymous"></script>
-    <script src="./scripts/app.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ReciPicker</title>
+        <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+        <link href="./styles/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <form id="formContainer" class="form-container">
+            <div class="form-group">
+                <label>Input the name of a dish(soup,salad,sandwich,etc).</label></br>
+                <input type="text" name="recipe" id="foodSelector" class="form-control">
+                <input type="submit" id="submitButton" value="Find your recipe!" class="submit-button">
+            </div>
+        </form>
+            <div id="contentContainer" class="container-size">
+                <div id="recipeContainer" class="recipe-container"></div>
+            </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"crossorigin="anonymous"></script>
+        <script src="./scripts/app.js"></script>
+    </body>
 </html>
