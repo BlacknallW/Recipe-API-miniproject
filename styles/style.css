@@ -16,8 +16,6 @@ html {
     display: grid;
     grid-template-columns:40px px auto 50px;
     grid-template-rows: 25% 15px auto;
-    border: 1px solid black;
-
 }
 
 .form-container {
@@ -31,9 +29,7 @@ html {
     background-color: #458f1f
 }
 
-#recipe-container{
-    grid-column-start:
-}
+
 .submit-button {
     border-radius: 10%;
     color: #785b0b;
@@ -45,4 +41,18 @@ html {
 
 .link {
     text-decoration: none;
+}
+
+.iframePage {
+    height: 500px;
+    width: 100%;
+    border: 1px solid black
+}
+
+.line {
+    border: 1px solid black
+}
+
+.recipe-container {
+    
 }
