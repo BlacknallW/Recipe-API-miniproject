@@ -2,6 +2,7 @@ $(document).ready(function() {
     const formContainer = $("#formContainer");
     let foodSelector = $("#foodSelector");
     const contentContainer = $("#contentContainer")
+    const recipeContainer = $("#recipeContainer")
 
     formContainer.submit('submit', onSubmit);
 
@@ -26,10 +27,10 @@ $(document).ready(function() {
 
 
 
-        contentContainer.append(`<p>Dish Name: ${dishName}</p>`)
-        contentContainer.append(`<p>What You'll Need: ${dishIngredients}</p>`)
-        contentContainer.append(`<a href=${dishLink}>Link to Recipe</a></br>`)
-        contentContainer.append(`<img src="${dishImage}" class="rounded" class="img-thumbnail"></br>`)
+        recipeContainer.append(`<p>Dish Name: ${dishName}</p>`)
+        recipeContainer.append(`<p>What You'll Need: ${dishIngredients}</p>`)
+        recipeContainer.append(`<a href=${dishLink} class="link">Link to Recipe</a></br>`)
+        recipeContainer.append(`<img src="${dishImage}" class="img-border"></br>`)
     });
 }
 });
